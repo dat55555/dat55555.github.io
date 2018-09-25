@@ -1,0 +1,39 @@
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.anh{
+    margin-left: auto;
+    margin-right: auto;
+}
+.border{
+    border-style: solid;
+    padding: 5px;
+}
+.text{
+    font-size: 25px;
+    background-color: burlywood
+}
+.border2{
+    border-style: solid;
+    padding: 0px;
+}
+.a1{
+    border-bottom: 1px solid gray;
+}
+.a2{
+    text-align: center;
+    
+}
+.a3{
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.borderfooter{
+    border-top: 5px solid gray
+}
+.top{
+    position: fixed;
+    bottom: 5px;
+    float: right;
+}
