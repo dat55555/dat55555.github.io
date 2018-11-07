@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Đăng ký tài khoản</h1>
+    <form action="index2.html" id="form-register">
+        <input type="text" name="name" id="name" placeholder="Họ Tên"><span id="thongbao"style = "display: none">Nhap thong tin</span><br><br>
+        <input type="email" name="email" id="email" placeholder="Email"><span id="thongbaoemail"style = "display: none">Nhap email</span><br><br>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <span id="htpassword"style = "display: none">nhap mat khau</span><br><br>
+        <span id="htpasswordd"style = "display: none">phai tren 6 ky tu</span>
+        <button onclick="">Submit</button>
+    </form>
+    <script>
+        $('#form-register').on('submit',function(){
+            if($('#name').val()==''){
+                $('#thongbao').show();
+                return false;
+            }
+            if($('#email').val().match(/@/) == null){
+                $('#thongbaoemail').show();
+                $('#thongbao').hide();
+                return false;
+            }
+            if($('#password').val()=='' ){
+                $('#htpassword').show();
+                $('#thongbaoemail').hide();
+                return false;
+            }
+            if($('#password').val().length<6 ){
+                $('#htpasswordd').show();
+                $('#thongbaoemail').hide();
+                $('#thongbao').hide();
+                $('#htpassword').hide();
+                return false;
+            }
+        })
+            </script>
+</body>
+</html>
