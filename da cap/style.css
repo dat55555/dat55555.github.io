@@ -1,0 +1,563 @@
+/* menu */
+li{
+  display: inline;
+  font-size: 18px;
+  color: lightgrey;
+
+}
+ul{
+  background-color: white;
+  padding: 5px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/*  */
+.no-le{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+a{
+    padding: 5px
+}
+.text1{
+    text-align: center;
+  font-size: 35px;;
+  font-family: "Courier New", Courier, monospace;
+}
+.text2{
+    text-align: center;
+   
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 0px;
+    padding-left: 58px;
+}
+.textimg1{
+    background-color: black;
+}
+/* slides */
+.relativelslides{
+  position: relative;
+}
+.absoluteslides{
+position: absolute;
+top: 30%;
+left: 15%;
+color: #f5f5f5;
+font-size: 10px;
+}
+.khuyenmai{
+  position :relative;
+  float:right;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 200px;}
+}
+/* the end */
+/* hoverimg1 */
+.hover {
+  position: relative;
+  width: 100%;
+}
+.texthover{
+  position: absolute;
+  bottom: 0;
+  background-color: #e67e22;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  transition: .5s ease;
+  line-height: 50px;
+  color:white;
+}
+.texthoverb{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hover:hover .texthover {
+  height: 40%;
+
+}
+.iconhover1{
+  font-size:50px; 
+  text-align:center;
+  background-color: greenyellow;
+  height: 55px;
+  width: 55px;
+  border-top-right-radius: 50px;
+  border-top-left-radius:  50px;
+    top: 357px;
+}
+
+.texthover1{
+  color: palevioletred;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 5px;
+}
+.texthover2{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 5px;
+}
+.hovermoi{
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0,0.2);
+
+  width: 100%;
+  height: 25%;
+}
+  /*  */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+     opacity: 0.5;
+  }
+  
+  .hover1:hover .overlay {
+    height: 45%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+ 
+  /* col gioi thieu */
+.a1{
+   color: #6adcd0;
+    font-family: OpenSans-Bold;
+    font-size: 36px
+}
+.text4{
+    color: #bdc3c7;
+}
+.text5{
+    font-size: 20px;
+    color: #95a5a6;
+}
+.button1{
+   background-color: #6adcd0;
+   text-align: center;
+ padding: 10px 0px 10px 0px;
+ box-shadow: 0 5px #2980b9;
+}
+.button1:hover{
+    text-decoration: none;
+    color: aqua;
+}
+.img2{
+    opacity: 0.2;
+ /* img lon */
+}
+.imgto{
+    position: relative;
+}
+.bimgto{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textimgto{
+    font-family: 'PT Serif', serif; font-size:50px; 
+}
+.bimgto1{
+    position: absolute;
+    top: 200px;
+    left: 450px;
+}
+  /* the end */
+.no-le{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+/* img hover */
+.hovermenu{
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hovermenu:hover .overlay {
+    width: 50%;
+     opacity: 0.2;
+  }
+  .overlay0 {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hovermenu:hover .overlay0 {
+    width:50%;
+    opacity: 0.1;
+  }
+
+  .imgmenu {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px #888888;
+  }  
+  /* imghover2 */
+  .hovermenu1{
+    position: relative;
+    width: 100%;
+}
+
+.overlay01 {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hovermenu1:hover .overlay01 {
+    width: 50%;
+    opacity: 0.1;
+  }
+  .overlay02 {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hovermenu1:hover .overlay02 {
+    width:50%;
+     opacity: 0.5;
+  }
+
+  .imgmenu1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  } 
+  /* imghover2 */
+  .hoverthucdon{
+    position: relative;
+    width: 100%;
+ 
+}
+
+.overlay01 {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hoverthucdon:hover .overlay01 {
+    width: 50%;
+     opacity: 0.5;
+  }
+  .overlay02 {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  
+    background-color: gray;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .hoverthucdon:hover .overlay02 {
+    width:50%;
+     opacity: 0.5;
+  }
+
+  .thucdon {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  } 
+  .iconhover {
+    color: #8e44ad;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+   
+  }
+  .iconhover1{
+    color: #8e44ad;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  }
+  .iconduoi{
+      background-color: #1abc9c;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      left: 50px; 
+       /* margin: auto; */
+  }
+  .readmore{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3498db;
+   color: white;
+   border-radius: 5px;
+ }
+ .iconCOME{
+   position: absolute;
+   bottom: 0%;
+   background-color: #81ecec;
+   margin: auto;
+   text-align: center;
+   left: 0;
+   right: 0;
+  height: 45px;
+  width: 80px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+ }
+  @media only screen and (max-width: 768px) {
+    .readmore {
+      bottom: -30px;
+    }
+   }
+   /* dongho */
+   .dongho{
+     background-color: #00BF96;
+   }
+   #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .clockdiv1{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+  }
+  
+  .span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+  }
+   
+   /* het dong ho */
+   .thumbnail1{
+    position: relative;
+  }
+  .backgroundbottom{
+    background-color: #f5f5f5;
+    padding: 40px 0px
+  }
+  .backgroundbottomduoi{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    margin: 0;
+    text-indent: 50px
+  }
+  .background{
+      display: inline;
+  }
+
+/* flex */
+.flexcol{
+  display: flex;
+  flex-direction:column-reverse;
+  position: fixed;
+  top: 30%;
+}
+.flexcol1{
+  padding-bottom: 5px
+}
+.backgroundflex{
+  width: 50px;
+  height: 50px;
+ 
+}
+/* the end */
+/*  css chuan  */
+
+.card{
+  position: relative;
+  max-width: 300px;
+  height: auto;
+
+  border-radius: 15px;
+  margin: auto;
+  padding: 0px 0px 40px 0px;
+  box-shadow: 0 10px 15px ;
+  transition: .5s;
+}
+
+
+.card:hover{
+  transform: scale(1.1)
+}
+.card .dangky{
+  position: relative;
+  z-index: 2;
+  background-color: #3498db;
+  color: pink;
+  padding: 10px;
+  border-radius: 50px;
+  
+}
+.chiaanh{
+  padding-bottom: 50px;
+
+}
+/* the end */
+/* dangky */
+.anhdangky{
+  width: 100%;
+  height: 95vh;
+  padding: 1%;
+  border-radius: 5px;
+}
+.relativedangky{
+  position: relative;
+}
+.absolutedangky{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0932b;
+  font-family: 'Srisakdi', cursive;
+}
+
+/* the end */
+/* menuduoi */
+
+/*  */

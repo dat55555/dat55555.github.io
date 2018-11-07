@@ -1,0 +1,114 @@
+body{
+    background-image: url("anh/parisbg3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menu1{
+    background-color: #81ecec;
+    padding: 10px;
+}
+.background1{
+    background-color: white;
+    padding: 5px;
+}
+.padding{
+    padding-top: 10px;
+   
+}
+/*  */
+.img {
+    position: relative;
+    width:100%;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+      background-color: rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  .img:hover .overlay {
+  
+    transform: scale(1);
+  }
+  
+  .icon {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1abc9c;
+    padding: 7%;
+    border-radius: 50%
+  }
+
+  /*  */
+.no-le{
+    margin: 0px !important;
+    padding: 0px !important;
+
+}
+
+.menu{
+    width: 100%;
+    background: #00316b;
+    /* position: sticky;
+    top:0px */
+}
+ul{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+ul li:hover{
+    background: #e91e63;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.icon1{
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 29px;
+    display: none;
+}
+@media(max-width:768px){
+    .icon1{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+    ul li{
+        display: block;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
