@@ -1,0 +1,77 @@
+body{
+    padding: 0px;
+    margin: 0px;
+ 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+ 
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 45px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+}
+div.a1{
+    width: 100%;
+    height: 70vh;
+    background: url(anh/IMG-20170810.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+      
+     .tong{
+       position: relative;
+     }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      transform: scale(0);
+      transition: .3s ease;
+      }
+      
+      .tong:hover .overlay {
+      
+        transform: scale(1);
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+          transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+.no-le{
+  padding: 0px !important;
+  margin: 0px !important;
+} 
