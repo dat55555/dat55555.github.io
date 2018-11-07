@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <script>
+                var x='';
+                function a(id){
+                    return document.getElementById(id)
+                }
+                function set_num(num){
+                    x+=num;
+                    a('kq').value= x;
+                }
+               function ketqua(){
+                   a('kq').value=eval(a('kq').value);
+                   x='';
+                
+               }
+               function Reset(){
+                a('kq').value=x=''
+               }
+               function sqrt(){
+                a('kq').value=Math.sqrt(a('kq').value);
+               }
+               function gt(){
+                a('kq').value= tgt(a('kq').value);
+               }
+               function tbp(){
+                a('kq').value= bp(a('kq').value);
+               }
+               function tgt(x){
+                   var i;
+                   var a=1;
+                   for(i=1;i<=x;i++){
+                       a = a*i;
+                   }
+                   return a;
+               }
+               function bp(x){
+                   var a = x*2;
+                   return a;
+               }
+            </script>
+    <div id='container'>
+        <input type='text' id='kq' placeholder="hien thi ket qua">
+      <div class="a1">  
+          <input type='button' value='1' onclick='set_num(this.value)'>
+        <input type='button' value='2' onclick='set_num(this.value)'>
+        <input type='button' value='3' onclick='set_num(this.value)'>
+        <input type='button' value='+' onclick='set_num(this.value)'>
+        <input type='button' value='-' onclick='set_num(this.value)'>
+    </div>
+       <div class="a2"> 
+           <input type='button' value='4' onclick='set_num(this.value)'>
+        <input type='button' value='5' onclick='set_num(this.value)'>
+        <input type='button' value='6' onclick='set_num(this.value)'>
+        <input type='button' value='*' onclick='set_num(this.value)'>
+        <input type='button' value='/' onclick='set_num(this.value)'>
+    </div>
+    <div class="a3">
+        <input type='button' value='7' onclick='set_num(this.value)'>
+        <input type='button' value='8' onclick='set_num(this.value)'>
+        <input type='button' value='9' onclick='set_num(this.value)'>
+        <input type="button" onclick="Reset()" value="Reset">
+    </div>
+      
+        <input type='button' value='sqrt' onclick='sqrt(this.value)'>
+        <input type='button' value='gt' onclick='gt(this.value)'>
+        <input type='button' value='tbp' onclick='tbp(this.value)'>
+        <input type='button' value='=' onclick='ketqua(this.value)'>
+    </div>
+</body>
+</html>
