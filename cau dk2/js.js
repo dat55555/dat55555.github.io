@@ -1,7 +1,3 @@
-// bai6
-function bai6(){
-    
-}
 
 // bai3
 function bai3(x){
@@ -58,4 +54,25 @@ function bai4(x){
             case "pl":
             return "hei"
     }
+}
+// bai1
+function bai1(){
+    var now = new Date();  
+    var date = now.getDate(); 
+    var month = now.getMonth() + 1; 
+    var year = now.getFullYear();  
+    var mua;
+    if(month<=3){
+        mua = "mua xuan"
+    }
+    else if(month<=6){
+        mua="he"
+    }
+    else if(month<=10){
+        mua="thu"
+    }
+    else{
+        mua="dong"
+    }
+    console.log(date + " - " + month + " - " + mua + " - "+ year)
 }

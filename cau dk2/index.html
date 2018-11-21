@@ -10,16 +10,19 @@
 <body>
     <script>
 // bai6
-function bai6(){
-    for(i=1;i<=100;i++){
-        if(i%2==0){
-            document.write()
-        }
-        else{
-            document.write("mau do")
-        }
+
+    for(var i=1;i<=100;i++){
+      if( i%2==0){
+        document.write("<span style='color:red;padding:10px'>"+i +"</span>")
+      }
+      else{
+        document.write("<span style='color:blue;padding:10px'>"+i +"</span>")
+      }
+      if(i%10==0){
+          document.write("<br>")
+      }
     }
-}
+
 
 
         </script>
